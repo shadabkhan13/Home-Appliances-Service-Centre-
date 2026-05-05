@@ -1,0 +1,463 @@
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .footer-1 {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .dropdown {
+        right: 50px;
+    }
+
+    .term {
+        padding-right: 20px;
+    }
+
+    .imagesgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-icon {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .all-service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        flex-direction: column;
+        max-height: none;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header button {
+        margin-top: 5px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close-sidebar {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-color: #FFFFFF;
+        color: #1FA2D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 600;
+        position: absolute;
+        top: -10px;
+        right: -20px;
+        border: 1px solid #1FA2D6;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #1FA2D6;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.4s;
+        z-index: 1000;
+        padding-top: 30px;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar>a {
+        display: block;
+        margin: 5px auto;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        white-space: normal;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+        display: none;
+        border: 1px solid #FFFFFF;
+    }
+
+    .aboutservice p {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .imagesgrid {
+        grid-template-columns: 1fr;
+    }
+
+    .imagesgrid>div {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .footer-1 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        height: auto;
+    }
+
+    .services-icon {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        margin: 50px auto;
+        gap: 10px;
+    }
+
+    .services-icon>div {
+        width: 100%;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .getdataform {
+        height: auto;
+        width: 95%;
+        padding-bottom: 20px;
+    }
+
+    .container-form-side-image {
+        grid-template-columns: 1fr;
+    }
+
+    .form-side-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-form-side-image>.form-container {
+        margin: 10px auto;
+        width: calc(100% - 20px);
+    }
+
+    .form-container>form>button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .popup {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .popup>.container-main {
+        width: 100%;
+        margin: auto;
+        overflow-x: scroll;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #1FA2D6;
+    }
+
+    .container-main>.image-in-popup {
+        border-color: #FFFFFF;
+    }
+
+    .popup>.form-data {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .popup .cancel-btn {
+        margin-left: 0;
+        float: right;
+        margin-bottom: 0;
+        border-radius: 0 20px 0 25px;
+        width: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .only-form {
+        width: 95%;
+        max-width: 400px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .only-form>.cancel-btn-1 {
+        margin-left: 0;
+        float: right;
+        margin-bottom: 0;
+        border-radius: 0 20px 0 25px;
+        width: 40px;
+    }
+
+    .only-form>.form-container {
+        padding-top: 10px;
+    }
+
+    .term {
+        padding-right: 20px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .form-data {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .form-data>a {
+        margin: 20px auto 0;
+    }
+
+    .phone-call-btn,
+    .whatsapp-btn {
+        height: 60px;
+        width: 60px;
+    }
+
+    .phone-call-btn>i {
+        font-size: 24px;
+    }
+
+    .whatsapp-btn>i {
+        font-size: 36px;
+    }
+
+    .phone-call-btn {
+        bottom: 80px;
+    }
+
+    .whatsapp-btn {
+        bottom: 150px;
+    }
+
+    .banner-image {
+        width: 95%;
+        background-size: contain;
+        height: 200px;
+    }
+
+    .disclaimer {
+        padding: 0 15px;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .disclaimer p {
+        padding-right: 0;
+        font-size: 14px;
+    }
+
+    .all-service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .all-service-cards>a {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .scrollupbtn {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+        overflow: hidden;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 0px 10px #1FA2D6;
+        cursor: pointer;
+        color: #1FA2D6;
+        background-color: #1FA2D6;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header .heading h1 {
+        font-size: 24px;
+    }
+
+    .services-icon {
+        grid-template-columns: 1fr;
+    }
+
+    .tittle h1 {
+        font-size: 24px;
+    }
+
+    .tittle h2 {
+        font-size: 30px;
+    }
+
+    .aboutservice h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .same-day-service h1 {
+        font-size: 22px;
+    }
+
+    .banner-image {
+        height: 120px;
+    }
+
+    .scrollupbtn {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+        overflow: hidden;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 0px 10px #1FA2D6;
+        cursor: pointer;
+        color: #1FA2D6;
+        background-color: #1FA2D6;
+    }
+
+    .slider-buttons>button {
+        display: none;
+    }
+
+    .services-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        margin: 50px auto;
+        gap: 30px;
+    }
+
+    .services-icon>div {
+        width: 100%;
+        max-width: 150px;
+        margin: auto;
+        height: 120px;
+    }
+
+    .container-form-side-image {
+        padding: 20px 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .imagesgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .imagesgrid>div {
+        height: 180px;
+    }
+
+    .imagesgrid>div>img {
+        height: 110px;
+    }
+
+    .popup {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .popup>.container-main {
+        width: 90%;
+        margin: 10px auto;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .only-form {
+        z-index: 2000;
+    }
+
+    .all-service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-service-cards>a {
+        height: auto;
+    }
+
+}
